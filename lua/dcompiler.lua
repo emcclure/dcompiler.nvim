@@ -25,7 +25,7 @@ function dcompiler.dub_compile_project()
 		--return to the original directory
 		vim.fn.chdir(original_dir)
 end
-
+print("Dcompiler loaded!")
 -- Create a command to compile the current file
 vim.api.nvim_create_user_command('DCompile', dcompiler.compile_current_file, {})
 vim.api.nvim_create_user_command('DubCompile', dcompiler.dub_compile_project, {})
